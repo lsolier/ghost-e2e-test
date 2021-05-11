@@ -4,6 +4,9 @@ const url = 'http://localhost:2368/ghost/#/signin';
 var screenshot_number = 0;
 const SCREENSHOT_FOLDER = './screenshots/create-tag/';
 
+const user= '<ESTABALECER USER>';
+const pass= '<ESTABALECER PASS>';
+
 //Función flecha asíncrona
 (async () => {
   //Definir los navegadores en los que se quiere hacer la prueba
@@ -22,8 +25,8 @@ const SCREENSHOT_FOLDER = './screenshots/create-tag/';
     await page.screenshot({path: `${SCREENSHOT_FOLDER}${getNumber()}`});
 
     console.log('🚩 Completando datos login');
-    await page.type('input[placeholder="Email Address"]', 'l.solier@uniandes.edu.co');
-    await page.type('input[placeholder="Password"]', 'Lui$$olier15');
+    await page.type('input[placeholder="Email Address"]', user);
+    await page.type('input[placeholder="Password"]', pass);
     await page.click('text="Sign in"');
     await page.screenshot({path: `${SCREENSHOT_FOLDER}${getNumber()}`});
     console.log('🚩 Inicio session con exito');

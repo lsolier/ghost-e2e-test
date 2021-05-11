@@ -1,0 +1,5 @@
+{
+    "projectId": "ghost",
+    "defaultCommandTimeout": 10000 ,
+    "chromeWebSecurity": false
+}

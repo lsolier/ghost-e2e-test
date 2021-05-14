@@ -1,3 +1,6 @@
 *node_modules/*
 
 *KrakenMobile/*
+
+*test/reports/*
+!*test/reports

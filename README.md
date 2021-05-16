@@ -41,7 +41,7 @@ node create-user.js
 
 
 
-## E2E Kraken (Acoplarse a Ruby, creo que no es buena idea)
+## E2E Kraken (Acoplarse a Ruby creo que no es buena idea)
 
 Para instalar gema denominada Blunder, ejecutar:
 
